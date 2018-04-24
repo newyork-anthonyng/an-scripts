@@ -1,0 +1,40 @@
+{
+  "name": "an-scripts",
+  "version": "0.0.0-development",
+  "description": "CLI for common scripts for my projects",
+  "bin": {
+    "an-scripts": "src/index.js"
+  },
+  "dependencies": {
+    "commitizen": "^2.9.6",
+    "cross-spawn": "^6.0.5",
+    "cz-conventional-changelog": "^2.1.0",
+    "glob": "^7.1.2",
+    "jest": "^22.4.3"
+  },
+  "devDependencies": {
+    "yargs": "^11.0.0",
+    "semantic-release": "^15.1.7",
+    "travis-deploy-once": "^4.4.1"
+  },
+  "scripts": {
+    "test": "exit 0",
+    "commit": "node src commit",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
+  },
+  "keywords": [
+    "an",
+    "scripts",
+    "Anthony Ng"
+  ],
+  "author": "Anthony Ng <newyork.anthonyng@gmail.com> (http://anthonyng.me)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/newyork-anthonyng/an-scripts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/newyork-anthonyng/an-scripts/issues"
+  }
+}
