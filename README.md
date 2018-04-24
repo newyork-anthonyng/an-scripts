@@ -16,7 +16,7 @@ CLI toolbox for common scripts for my projects. Inspired by [kcd-scripts](https:
 
 # Available Scripts
 - [x] Commitizen
-- [ ] Creating a README.md template
+- [x] Creating a README.md template
 - [ ] Creating a License
 - [x] Running unit tests, code coverage
 - [ ] Initializing semantic-release, codecov
