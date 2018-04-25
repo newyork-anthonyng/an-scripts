@@ -13,7 +13,7 @@
     "jest": "^22.4.3"
   },
   "devDependencies": {
-    "yargs": "^11.0.0",
+    "read-pkg-up": "^3.0.0",
     "semantic-release": "^15.1.7",
     "travis-deploy-once": "^4.4.1"
   },
