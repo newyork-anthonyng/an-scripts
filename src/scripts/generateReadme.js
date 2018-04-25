@@ -1,6 +1,7 @@
 const fs = require("fs");
 const readmeTemplate = require("../config/readmeTemplate");
 const readPkgUp = require("read-pkg-up");
+const printError = require("../utility").printError;
 
 function populateReadmeTemplate (packageName) {
   return readmeTemplate.replace(/REPO_NAME/g, packageName);
@@ -15,12 +16,12 @@ function getPackageName () {
 getPackageName().then(packageName => {
   try {
     fs.writeFileSync("README.md", populateReadmeTemplate(packageName));
+
+    console.log("Successfully created README.md");
   } catch (e) {
-    console.error(e);
-    console.error("Could not create README.md");
+    printError("Something went wrong while writing README.md", e);
   }
 })
 .catch((e) => {
-  console.error(e);
-  console.error("Could not find a package.json to use for the package name.");
+  printError("Could not find a package.json", e);
 })
