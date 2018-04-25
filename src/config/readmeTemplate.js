@@ -21,7 +21,7 @@ module.exports = `
 [license]: https://github.com/newyork-anthonyng/REPO_NAME/blob/master/LICENSE
 [license-badge]: https://img.shields.io/npm/l/REPO_NAME.svg?style=flat-square
 [npmcharts]: https://npmcharts.com/compare/REPO_NAME
-[npm-version]:https://www.npmjs.com/package/REPO_NAME
+[npm-version]: https://www.npmjs.com/package/REPO_NAME
 [npm-badge]: https://img.shields.io/npm/v/REPO_NAME.svg?style=flat-square
 [pull-request-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
 [travis-badge]: https://travis-ci.org/newyork-anthonyng/REPO_NAME.svg?branch=master
