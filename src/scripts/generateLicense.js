@@ -2,7 +2,7 @@ const fs = require("fs");
 const licenseTemplate = require("../config/licenseTemplate");
 const readPkgUp = require("read-pkg-up");
 const writePkg = require("write-pkg");
-const printError = require("../utility").printError;
+const { printError } = require("../utility");
 
 function getCurrentYear() {
   return new Date().getFullYear();
@@ -11,7 +11,8 @@ function getCurrentYear() {
 function populateReadmeTemplate() {
   return licenseTemplate
     .replace("<YEAR>", getCurrentYear())
-    .replace("<NAME>", "Anthony Ng").trim();
+    .replace("<NAME>", "Anthony Ng")
+    .trim();
 }
 
 try {
@@ -21,9 +22,9 @@ try {
     const newPackageInfo = Object.assign({}, result.pkg, { license: "MIT" });
 
     writePkg(newPackageInfo).then(() => {
-      console.log("Successfully created LICENSE");
+      console.log("Successfully created LICENSE"); // eslint-disable-line no-console
     });
-  });  
+  });
 } catch (e) {
   printError("Something went wrong while writing LICENSE", e);
 }
