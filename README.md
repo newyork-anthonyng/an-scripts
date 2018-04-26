@@ -21,7 +21,7 @@ CLI toolbox for common scripts for my projects. Inspired by [kcd-scripts](https:
 * [x] Creating a License
 * [x] Running unit tests, code coverage
 * [ ] Initializing semantic-release, codecov
-* [ ] Prettier/Linter
+* [x] Prettier/Linter
 * [ ] Codecov
 * [ ] Update package.json with your personal information
   * bugs, author name, license, issues
